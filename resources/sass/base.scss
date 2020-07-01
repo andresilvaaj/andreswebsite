@@ -1,0 +1,154 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: Arial, Verdana;
+    height: 100%;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+}
+
+#background-image {
+    background: url('/images/work-place-optimized-2.jpg') no-repeat center center floralwhite;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    #message {
+        margin: auto 0;
+        
+        top: calc(50% - 160px);
+        position: relative; 
+
+        @include media-breakpoint-up(lg) {
+            top: calc(50% - 195px);
+        }
+    }
+
+    .row1 {
+        text-align: center;
+        padding: 5px 0;
+
+        .message-home {
+            font-family: "lemonmilk";
+            font-size: 55pt;
+            color: #333333;
+            text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 46pt;
+            }
+        }
+
+        .message-home-highlighted {
+            font-family: "lemonmilk";
+            color: #fff;
+            background-color: #0044B2;
+            padding: 10px 30px;
+            display: inline-block;
+            font-size: 55pt;
+
+            @include media-breakpoint-up(lg) {
+                font-size: 65pt;
+            }
+        }
+    }
+}
+
+
+#menu {
+    background-color: #0044B2;
+    padding: 30px 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    @include media-breakpoint-up(lg) {
+        padding: 7px 0;
+    }
+
+    .section-container {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-align: center;
+
+         @include media-breakpoint-up(lg) {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 1170px;
+            text-align: left;
+         }
+    }
+
+    #logo-container {
+        display: none;
+
+        @include media-breakpoint-up(lg) {
+            display: inline-block;
+        }
+    }
+
+    #logo {
+        font-family: "frontpageneue";
+        font-size: 23;
+        color: #fff;
+        letter-spacing: 2px;
+        margin-bottom: -5px;
+    }
+
+    #sub-logo {
+        font-family: "lemonmilk";
+        font-size: 14;
+        color: #006AEA;
+        letter-spacing: 7.3px;
+    }
+
+    #menu-container {
+        height: 45px;
+        line-height: 45px;
+        white-space: nowrap;
+        display: inline-block;
+
+        @include media-breakpoint-up(lg) {
+            float: right;
+        }
+
+        ul {
+            padding-left: 0;
+        }
+    }
+
+    #menu-container ul li {
+        font-family: "lemonmilk";
+        font-size: 24pt;
+        color: #fff;
+        list-style: none;
+        display: inline;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 12pt;
+        }
+    }
+
+    #menu-container ul li + li:before {
+        content: "/";
+        margin: 0 28px;
+        color: #fff;
+
+        @include media-breakpoint-up(lg) {
+            margin: 0 12px;
+        }
+    }
+}
