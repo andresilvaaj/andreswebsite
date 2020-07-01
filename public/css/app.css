@@ -10972,7 +10972,7 @@ html {
 
 #background-image #message {
   margin: auto 0;
-  top: calc(50% - 160px);
+  top: calc(50% - 250px);
   position: relative;
 }
 
@@ -10984,7 +10984,13 @@ html {
 
 #background-image .row1 {
   text-align: center;
-  padding: 5px 0;
+  padding: 2vh 0;
+}
+
+@media (min-width: 992px) {
+  #background-image .row1 {
+    padding: 5px 0;
+  }
 }
 
 #background-image .row1 .message-home {

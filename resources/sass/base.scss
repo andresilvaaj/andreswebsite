@@ -24,7 +24,7 @@ body, html {
     #message {
         margin: auto 0;
         
-        top: calc(50% - 160px);
+        top: calc(50% - 250px);
         position: relative; 
 
         @include media-breakpoint-up(lg) {
@@ -34,7 +34,11 @@ body, html {
 
     .row1 {
         text-align: center;
-        padding: 5px 0;
+        padding: 2vh 0;
+
+        @include media-breakpoint-up(lg) {
+           padding: 5px 0; 
+        }
 
         .message-home {
             font-family: "lemonmilk";
